@@ -4,8 +4,6 @@ import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.remember
-import com.yuwin.snapsyn.ui.theme.SnapSyn.colors
-import com.yuwin.snapsyn.ui.theme.SnapSyn.typography
 
 
 @Composable
