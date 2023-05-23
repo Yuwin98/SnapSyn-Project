@@ -8,11 +8,12 @@
     <item
         android:width="192dp"
         android:height="192dp"
-        android:gravity="center" android:drawable="@drawable/splash_logo"/>
+        android:gravity="center"
+        android:drawable="@drawable/splash_logo"/>
 
     <item
-        android:width="120dp"
-        android:height="40dp"
+        android:width="130dp"
+        android:height="52dp"
         android:bottom="60dp"
         android:drawable="@drawable/snapsyn_branding"
         android:gravity="center|bottom">
