@@ -10,7 +10,7 @@ import com.yuwin.snapsyn.nav.composables.splashComposable
 @Composable
 fun AppNavHost(
     navController: NavHostController = rememberNavController(),
-    startDestination: Screen = Screen.SPLASH
+    startDestination: Screen = Screen.HOME
 ) {
 
     NavHost(
@@ -18,7 +18,7 @@ fun AppNavHost(
         startDestination = startDestination.route
     ) {
         splashComposable(navController)
-        homeComposable(navController)
+        homeComposable()
     }
 
 }
