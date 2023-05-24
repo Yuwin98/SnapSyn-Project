@@ -12,7 +12,9 @@
         android:drawable="@drawable/splash_logo"/>
 
     <item
-        android:bottom="65dp"
+        android:width="120dp"
+        android:height="48dp"
+        android:bottom="60dp"
         android:drawable="@drawable/snapsyn_branding"
         android:gravity="center|bottom">
     </item>
