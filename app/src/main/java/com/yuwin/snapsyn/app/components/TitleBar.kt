@@ -42,31 +42,17 @@ fun TitleBar(
             .background(backgroundColor)
     ) {
 
-//        IconButton(
-//            onClick = onBack,
-//            modifier = Modifier.size(48.dp)
-//        ) {
-//            Icon(
-//                painter = painterResource(id = R.drawable.arrow_left),
-//                contentDescription = "Arrow Left",
-//                tint = iconColor,
-//                modifier = Modifier.size(size = 24.dp)
-//            )
-//        }
-
-
         Row(
             verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier.fillMaxSize()
         ) {
-
             IconButton(
                 icon = R.drawable.arrow_left,
                 contentDescription = "Back Button",
-                modifier = Modifier.padding(start = 4.dp)
-            ) {
-
-            }
+                iconColor = iconColor,
+                modifier = Modifier.padding(start = 4.dp),
+                onClick = onBack
+            )
         }
 
         Row(
@@ -83,8 +69,6 @@ fun TitleBar(
                     .fillMaxWidth()
             )
         }
-
-
     }
 }
 

@@ -25,8 +25,9 @@ fun HomeTopBar() {
         TitleBar(
             title = "Home",
             titleAlignment = TextAlign.Left,
-            iconColor = SnapSyn.colors.white,
-            titleColor = SnapSyn.colors.white
+            backgroundColor = SnapSyn.colors.titleBarBackground,
+            iconColor = SnapSyn.colors.iconPrimary,
+            titleColor = SnapSyn.colors.onSurface
         ) {
 
         }

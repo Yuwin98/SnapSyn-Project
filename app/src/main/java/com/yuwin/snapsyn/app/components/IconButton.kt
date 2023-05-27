@@ -21,9 +21,9 @@ fun IconButton(
     modifier: Modifier,
     icon: Int,
     iconColor: Color = SnapSyn.colors.white,
-    contentDescription: String,
     enabled: Boolean = true,
     bounded: Boolean = true,
+    contentDescription: String,
     interactionSource: MutableInteractionSource = remember { MutableInteractionSource() },
     onClick: () -> Unit
 ) {
@@ -36,8 +36,7 @@ fun IconButton(
                 role = Role.Button,
                 interactionSource = interactionSource,
                 indication = rememberRipple(
-                    bounded = bounded,
-                    color = SnapSyn.colors.primary
+                    bounded = bounded
                 )
             ),
         contentAlignment = Alignment.Center
