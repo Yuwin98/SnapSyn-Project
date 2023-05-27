@@ -22,7 +22,7 @@ fun AppTheme(
     DisposableEffect(systemUiController) {
 
         systemUiController.setSystemBarsColor(
-            color = currentColors.background,
+            color = currentColors.status_bar,
             darkIcons = false
         )
 

@@ -12,6 +12,7 @@ data class CustomColors(
     val background: Color,
     val gradient_start: Color,
     val gradient_end: Color,
+    val status_bar: Color,
     val white: Color
 )
 
@@ -22,6 +23,7 @@ val lightColors = CustomColors(
     background = Color(0xFF222222),
     gradient_start = Color(0xFFFF9171),
     gradient_end = Color(0xFFFF005C),
+    status_bar = Color(0xFF0A0502),
     white = Color(0xFFFFFFFF)
 )
 
@@ -32,6 +34,7 @@ val darkColors = CustomColors(
     background = Color(0xFF222222),
     gradient_start = Color(0xFFFF9171),
     gradient_end = Color(0xFFFF005C),
+    status_bar = Color(0xFF0A0502),
     white = Color(0xFFFFFFFF)
 )
 
