@@ -8,7 +8,6 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.Immutable
 import androidx.compose.runtime.remember
-import androidx.compose.ui.graphics.Color
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 
@@ -18,7 +17,7 @@ fun AppTheme(
     content: @Composable () -> Unit
 ) {
 
-    val currentColors = remember { if (darkTheme) darkColors else lightColors }
+    val currentColors = remember { customColors }
 
     val systemUiController = rememberSystemUiController()
 
@@ -31,7 +30,7 @@ fun AppTheme(
 
         systemUiController.setNavigationBarColor(
             color = currentColors.titleBarBackground,
-            darkIcons = !darkTheme
+            darkIcons = false
         )
 
         onDispose { }

@@ -26,13 +26,6 @@ fun HomeScreen() {
             .fillMaxSize()
             .background(color = SnapSyn.colors.background)
     ) {
-
-//        Icon(
-//            painter = painterResource(id = R.drawable.snapsyn_text_logo),
-//            contentDescription = "Text Logo",
-//            tint = SnapSyn.colors.white,
-//            modifier = Modifier.size(width = 150.dp, height = 60.dp)
-//        )
         HomeTopBar()
 
     }
