@@ -5,7 +5,6 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
 import com.yuwin.snapsyn.nav.composables.homeComposable
-import com.yuwin.snapsyn.nav.composables.splashComposable
 
 @Composable
 fun AppNavHost(
@@ -17,7 +16,6 @@ fun AppNavHost(
         navController = navController,
         startDestination = startDestination.route
     ) {
-        splashComposable(navController)
         homeComposable()
     }
 

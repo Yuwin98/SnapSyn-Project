@@ -14,7 +14,7 @@ class MainActivity : ComponentActivity() {
 
         super.onCreate(savedInstanceState)
 
-        installSplashScreen().setKeepOnScreenCondition{true}
+        installSplashScreen()
 
         setContent {
             AppTheme {
