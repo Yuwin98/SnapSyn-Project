@@ -24,12 +24,12 @@ fun AppTheme(
     DisposableEffect(systemUiController, darkTheme) {
 
         systemUiController.setStatusBarColor(
-            color = currentColors.status_bar,
+            color = currentColors.systemBars,
             darkIcons = false
         )
 
         systemUiController.setNavigationBarColor(
-            color = currentColors.titleBarBackground,
+            color = currentColors.systemBars,
             darkIcons = false
         )
 

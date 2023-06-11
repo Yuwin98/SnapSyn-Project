@@ -8,31 +8,21 @@ import androidx.compose.ui.graphics.Color
 data class CustomColors(
     val primary: Color,
     val secondary: Color,
-    val accent: Color,
     val background: Color,
-    val titleBarBackground: Color,
-    val gradient_start: Color,
-    val gradient_end: Color,
-    val status_bar: Color,
+    val backgroundSecondary: Color,
+    val systemBars: Color,
     val ripple: Color,
-    val white: Color,
-    val onSurface: Color,
-    val iconPrimary: Color
+    val text_home: Color,
 )
 
 val customColors = CustomColors(
-    primary = Color(0xFFEF476F),
-    secondary = Color(0xFF06D6A0),
-    accent = Color(0xFFFFD166),
-    background = Color(0xFF222222),
-    titleBarBackground = Color(0xFF0A0502),
-    gradient_start = Color(0xFFFF9171),
-    gradient_end = Color(0xFFFF005C),
-    status_bar = Color(0xFF0A0502),
-    ripple = Color(0xFFFCFCFC),
-    onSurface = Color(0xFFFCFCFC),
-    iconPrimary = Color(0xFFFCFCFC),
-    white = Color(0xFFFFFFFF)
+    primary = Color(0xFFFF005C),
+    secondary = Color(0xFFFF9171),
+    systemBars = Color(0xFF010101),
+    background = Color(0xFF1B1B1B),
+    backgroundSecondary = Color(0xFF2B2B2B),
+    ripple = Color(0xFF4C4C4C),
+    text_home = Color(0xFF717171)
 )
 
 internal val LocalColors = staticCompositionLocalOf { customColors }

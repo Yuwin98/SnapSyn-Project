@@ -1,5 +1,6 @@
 package com.yuwin.snapsyn.app.components
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Box
@@ -15,14 +16,15 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.yuwin.snapsyn.ui.theme.SnapSyn
 
 @Composable
 fun IconButton(
     modifier: Modifier,
     icon: Int,
-    iconColor: Color = SnapSyn.colors.white,
+    iconSize: Dp = 24.dp,
+    iconColor: Color = Color.Unspecified,
     enabled: Boolean = true,
     bounded: Boolean = true,
     contentDescription: String,
@@ -31,8 +33,6 @@ fun IconButton(
 ) {
     Box(
         modifier = modifier
-            .clip(CircleShape)
-            .size(48.dp)
             .clickable(
                 onClick = onClick,
                 enabled = enabled,
@@ -47,7 +47,7 @@ fun IconButton(
         Icon(
             painter = painterResource(id = icon),
             contentDescription = contentDescription,
-            modifier = Modifier.size(24.dp),
+            modifier = Modifier.size(iconSize),
             tint = iconColor
         )
     }
