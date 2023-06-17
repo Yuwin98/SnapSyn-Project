@@ -15,7 +15,9 @@ import androidx.compose.ui.unit.dp
 import com.yuwin.snapsyn.R
 import com.yuwin.snapsyn.app.components.SectionTitle
 import com.yuwin.snapsyn.ui.screens.home.components.EmptyState
+import com.yuwin.snapsyn.ui.screens.home.components.HomeBottomBar
 import com.yuwin.snapsyn.ui.screens.home.components.HomeTopBar
+import com.yuwin.snapsyn.ui.screens.home.components.PrimaryActions
 import com.yuwin.snapsyn.ui.theme.SnapSyn
 
 @Composable
@@ -38,11 +40,12 @@ fun HomeScreen() {
             modifier = Modifier.fillMaxWidth()
         )
 
-        SectionTitle(title = "CREATE NEW", isActionAvailable = true) {
-
-        }
-
         Spacer(modifier = Modifier.weight(1f))
+
+        PrimaryActions()
+
+        HomeBottomBar()
+
 
     }
 }

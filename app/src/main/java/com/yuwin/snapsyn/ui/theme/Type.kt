@@ -45,6 +45,11 @@ data class CustomTypography(
         fontSize = 14.sp,
         lineHeight = 20.sp
     ),
+    val h6: TextStyle = TextStyle(
+        fontFamily = RobotoFlex,
+        fontSize = 11.sp,
+        lineHeight = 16.sp
+    ),
     val subtitle1: TextStyle = TextStyle(
         fontFamily = RobotoFlex,
         fontSize = 16.sp

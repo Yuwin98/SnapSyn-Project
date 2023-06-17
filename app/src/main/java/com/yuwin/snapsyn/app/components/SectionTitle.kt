@@ -18,12 +18,12 @@ import com.yuwin.snapsyn.ui.theme.SnapSyn
 import java.util.Locale
 
 @Composable
-fun SectionTitle(title: String, isActionAvailable: Boolean, onClick: () -> Unit) {
+fun SectionTitle(title: String, isActionAvailable: Boolean, onClick: () -> Unit ={}) {
 
     Box(
         modifier = Modifier
             .fillMaxWidth()
-            .height(36.dp)
+            .height(24.dp)
     ) {
 
         Row(
@@ -39,7 +39,7 @@ fun SectionTitle(title: String, isActionAvailable: Boolean, onClick: () -> Unit)
 
             if (isActionAvailable) {
                 IconButton(
-                    modifier = Modifier.size(36.dp),
+                    modifier = Modifier.size(24.dp),
                     icon = R.drawable.chevron_right,
                     contentDescription = "Show More Button",
                     onClick = onClick

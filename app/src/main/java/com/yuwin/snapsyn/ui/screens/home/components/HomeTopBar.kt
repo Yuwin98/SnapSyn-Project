@@ -92,6 +92,7 @@ fun HomeIconBar() {
         IconButton(
             icon = R.drawable.settings,
             contentDescription = "Get Premium Subscription",
+            iconSize = 32.dp,
             modifier = Modifier
                 .clip(CircleShape)
                 .size(32.dp)
